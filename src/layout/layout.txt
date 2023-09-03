@@ -1,0 +1,55 @@
+//没有二级导航的
+                 <el-menu-item index="1">
+                    <span slot="title"> 首页</span>
+                 </el-menu-item>
+                 <!-- 贷款管理选项 -->
+                 <el-submenu index="2">
+                    <template slot="title">
+                    <span>贷款管理</span>
+                    </template>
+                  <el-menu-item index="2-1">
+                     <router-link to="/loan-input/index">贷款申请</router-link>
+                  </el-menu-item>
+                  </el-submenu>
+                  <!-- 申请管理选项  -->
+                  <el-submenu index="3">
+                      <template slot='title'>                        
+                          <span>申请管理</span>                        
+                      </template>
+                      <el-menu-item index="3-1">
+                        <router-link to="/application-manage/index">申请列表</router-link>
+                      </el-menu-item>
+                  </el-submenu>
+                  <!-- 贷款审批选项 -->
+                  <el-submenu index="4">
+                      <template slot="title">
+                        <span>贷款审批</span>
+                      </template>
+                      <el-menu-item index="4-1">
+                        <router-link to="/loan-approve/first">初审</router-link>
+                      </el-menu-item>
+                      <el-menu-item index="4-1">
+                        <router-link to="/loan-approve/end">终审</router-link>
+                      </el-menu-item>
+                  </el-submenu>
+                  <!-- 合同管理选项 -->
+                  <el-submenu index="5">
+                    <template slot="title">
+                        <span>合同管理</span>
+                    </template>
+                    <el-menu-item index="5-1">
+                        <router-link to='/contract-manage/index'>合同列表</router-link>
+                    </el-menu-item>
+                  </el-submenu> 
+                  <!-- 权限管理 -->
+                  <el-submenu index="6">
+                    <template slot="title">
+                        <span>权限管理</span>
+                    </template>
+                    <el-menu-item index="6-1">
+                        <router-link to='/permission/create'>创建管理员</router-link>
+                    </el-menu-item>
+                    <el-menu-item index="6-2">
+                        <router-link to='/permission/list'>列表展示</router-link>
+                    </el-menu-item>
+                  </el-submenu> 
